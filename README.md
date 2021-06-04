@@ -1,6 +1,6 @@
 # Blurry Detection PHP using ImageMagick
 
-This package is PHP version of [BlurryDetection](https://github.com/KejawenLab/BurryDetection) that written in Golang
+This package is PHP version of [BlurryDetection](https://github.com/KejawenLab/BlurryDetection) that written in Golang
 
 ## Requirements
 
