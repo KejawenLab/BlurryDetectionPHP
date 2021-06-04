@@ -1,6 +1,7 @@
 {
     "type": "library",
     "license": "proprietary",
+    "name": "kejawenlab/blurry-detection",
     "require": {
         "php": ">=7.1"
     },
