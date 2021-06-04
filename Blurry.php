@@ -17,11 +17,7 @@ class Blurry
             throw new \InvalidArgumentException('Space in path is not supported');
         }
 
-        if (0.1 > $this->runCommand($path)) {
-            return true;
-        }
-
-        return false;
+        return 0.1 > $this->calculate($path);
     }
 
     private function commandExist(): bool
@@ -34,7 +30,7 @@ class Blurry
         return strpos(trim($path), ' ') === false;
     }
 
-    private function runCommand(string $path): float
+    private function calculate(string $path): float
     {
         $raw = explode(' ', exec(sprintf('identify -verbose %s | grep deviation', $path)));
 
